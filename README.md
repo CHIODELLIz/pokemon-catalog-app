@@ -12,4 +12,4 @@
 
 # Descrição
 
-* Aplicativo com o intuito de catalogar todos os pokemons existentes e se desejado, é possível compartilhar as informações adquiridas
+* Aplicativo com o intuito de catalogar todos os pokemons existentes e se desejado, é possível compartilhar as informações adquiridas.
