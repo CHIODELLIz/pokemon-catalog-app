@@ -1,0 +1,15 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            Pokémon's
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+        <ion-item (click)="goToPokemonDetail(select.pokemon.name)" *ngFor="let select of pokemonList">
+            <h2>{{ select.pokemon.name }}</h2>
+        </ion-item>
+    </ion-list>
+</ion-content>

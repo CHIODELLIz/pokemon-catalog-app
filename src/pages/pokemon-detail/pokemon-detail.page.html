@@ -1,0 +1,39 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            Pokémon Details
+        </ion-title>
+        <ion-buttons end>
+            <button ion-button (click)="shareInfo()">
+                <ion-icon name="share"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+<ion-content>
+    <div *ngIf="showContent">
+        <div class="div-subheader" text-center>
+            <ion-slides autoplay="2000">
+                <ion-slide>
+                    <img class="pokemon-avatar" [src]="avatar.front"
+                        [ngStyle]="{ 'background-image': ' avatar.front ' }" />
+                </ion-slide>
+                <ion-slide>
+                    <img class="pokemon-avatar" [src]="avatar.back"
+                        [ngStyle]="{ 'background-image': ' avatar.back ' }" />
+                </ion-slide>
+            </ion-slides>
+            <h2 class="pokemon-name"> {{pokemon.name}} </h2>
+        </div>
+        <ion-item no-lines text-center class="pokemon-detail">
+            <h3>height</h3>
+            <p>{{ pokemon.height }}</p>
+            <h3>weight</h3>
+            <p>{{ pokemon.weight }}</p>
+            <h3>types</h3>
+            <p *ngFor="let type of types">{{ type }}</p>
+            <h3>abilities</h3>
+            <p *ngFor="let ability of abilities">{{ ability }}</p>
+        </ion-item>
+    </div>
+</ion-content>

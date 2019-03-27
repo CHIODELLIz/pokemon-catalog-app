@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Types
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <ion-list>
+    <ion-item (click)="goToPokemonsType(pokemonType.name)" *ngFor="let pokemonType of pokemonTypesList">
+      <h2>{{ pokemonType.name }}</h2>
+    </ion-item>
+  </ion-list>
+</ion-content>
