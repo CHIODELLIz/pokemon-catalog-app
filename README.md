@@ -1,4 +1,4 @@
-#### Aplicativo para desafio ####
+# Aplicativo para desafio
 
 * Tecnologias utilizadas
 
