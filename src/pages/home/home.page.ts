@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { NavController, AlertController } from 'ionic-angular';
 import { ApiService } from '../../services/api.service';
 import { LoadingHelper } from '../../helpers/loading.helper';
-import { map } from 'rxjs/operators';
 import { PokemonListPage } from '../pokemon-list/pokemon-list.page';
 
 @Component({
