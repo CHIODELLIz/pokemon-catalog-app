@@ -1,6 +1,6 @@
 # Aplicativo para desafio
 
-* Tecnologias utilizadas
+### Tecnologias utilizadas
 
 - NodeJS@10.15.1
 - Ionic@3.9.2
